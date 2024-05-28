@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FArbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/coldiac-free" rel="stylesheet">
+</head>
+<body onload="logInChecker()">
+   <header>
+        <nav>
+            <label class="logo-header">
+                <img src="../assets/image 1.png" alt="farbucks logo png">
+                <div class="text-header"><h2>FArbucks</h2></div>
+            </label>
+            <ul>
+                <li><a id="nav" href="index.html">Home</a></li>
+                <li><a id="nav" href="coffee.html">Coffee</a></li>
+                <li><a id="nav" class="active" href="#">Events</a></li>
+                <li><a id="nav" href="aboutUs.html">About Us</a></li>
+                <li><a onclick="signOutValidation();" id="register-nav" href="#"">Register</a></li>
+            </ul>
+            <label id="burger-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+   </header> 
+
+   <section id="eventPage">
+       <div class="header-text">
+           <h1>Our Events</h1>
+       </div>
+        <div id="banner">
+            <div class="banner-promotion">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                    
+                    </div>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="events-img" src="../assets/Blue and Pink Modern Tech Electronics and Technology Retractable Exhibition Banner 1.png" class="d-block w-100" alt="event banner png">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/Brown Minimalist Grand Opening Coffee Shop Aesthetic Banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="../assets/Coffee-Shop.jpg" class="d-block w-100" alt="...">
+                    </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+     <div class="footer-content">
+       <h2>FArbucks</h2>
+       <p>For more information, please go check our social media below: </p>
+       <ul class="socmed-logo">
+        <li><a id="ig" href="https://www.instagram.com/farbucks.id/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a id="twitter" href="https://twitter.com/farbucks" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a id="yt" href="https://www.youtube.com/user/farbucks" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        <li><a id="facebook" href="#https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a id="tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+       </ul>
+     </div>
+     <div class="copyright">
+       <p>&copy;2022 FArbucks Coffee Company. All rights reserved.</p>
+     </div>
+   </footer>
+
+    <script src="script.js"></script>
+ </body>
+ </html>

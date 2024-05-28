@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FArbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/coldiac-free" rel="stylesheet">
+  </head>
+<body>
+   <header>
+        <nav>
+            <label class="logo-header">
+                <img src="../assets/image 1.png" alt="farbucks logo png">
+                <div class="text-header"><h2>FArbucks</h2></div>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coffee.html">Coffee</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a id="register-nav" class="active" href="#">Register</a></li>
+            </ul>
+            <label id="burger-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+   </header> 
+
+   <section id="reg-page">
+     <div class="reg-content">
+      <div class="reg-wrapper">
+        <div class="reg-header">
+          <div class="text register">Register</div>
+          <div class="text login">Login</div>
+        </div>
+        <div class="form-container">
+          <div class="form-slide-control">
+            <input type="radio" name="slider" id="register" checked>
+            <input type="radio" name="slider" id="login">
+            <label for="login" class="slide login">Login</label>
+            <label for="register" class="slide register">Register</label>
+            <div class="slide-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="register" onsubmit="event.preventDefault(); validateRegisForm();">
+              <div class="input-field">
+                <input type="text" placeholder="Full Name" id="fullName-input">
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Address" id="address-input">
+              </div>
+              <div class="input-field">
+                <input type="email" placeholder="Email Address" id="email-regis-input">
+              </div>
+              <div class="input-field">
+                <input type="password" name="password" id="register-password" placeholder="Password">
+                <i id="togglePassw-slash-register" class="fas fa-eye-slash" onclick="toggleFunction1()"></i>
+                <i id="togglePassw-register" class="fas fa-eye" onclick="toggleFunction1()"></i>
+              </div>
+              <div class="input-field">
+                <input type="password" name="password" id="confirm-password-register" placeholder="Confirm password">
+                <i id="togglePassw-slash-confirm-register" class="fas fa-eye-slash" onclick="toggleFunction2()"></i>
+                <i id="togglePassw-confirm-register" class="fas fa-eye" onclick="toggleFunction2()"></i>
+              </div>
+              
+              <div class="terms-condition">
+                <div class="checkbox">
+                  <input type="checkbox" id="cb-terms-condition">
+                </div>
+                <div class="terms-conditions-text">
+                  I agree with the <a href="termsCond.html" target="_blank">terms and conditions.</a>
+                </div>
+              </div>
+              
+              <div class="input-field">
+                <input type="submit" value="Sign Up">
+              </div>
+            </form>
+            <form action="#" class="login" onsubmit="event.preventDefault(); validateLoginForm();">
+              <div class="input-field">
+                <input type="email" placeholder="Email Address" id="email-login-input">
+              </div>
+              <div class="input-field">
+                <input type="password" name="password" id="password-login" placeholder="Password">
+                <i id="togglePassw-slash-login" class="fas fa-eye-slash" onclick="toggleFunction3()"></i>
+                <i id="togglePassw-login" class="fas fa-eye" onclick="toggleFunction3()"></i>
+              </div>
+              <div class="input-field">
+                <input type="submit" value="Login">
+              </div>
+              <div class="register-link">Not a member? <a href="#">Register here</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+     </div>
+   </section>
+
+<footer>
+    <div class="footer-content">
+      <h2>FArbucks</h2>
+      <p>For more information, please go check our social media below:</p>
+      <ul class="socmed-logo">
+        <li><a id="ig" href="https://www.instagram.com/farbucks.id/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a id="twitter" href="https://twitter.com/farbucks" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a id="yt" href="https://www.youtube.com/user/farbucks" target="_blank"><i class="fab fa-youtube"></i></a></li>
+        <li><a id="facebook" href="#https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a id="tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>&copy;2022 FArbucks Coffee Company. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>

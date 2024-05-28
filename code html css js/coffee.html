@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FArbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/coldiac-free" rel="stylesheet">
+</head>
+<body onload="logInChecker()">
+   <header>
+        <nav>
+            <label class="logo-header">
+                <img src="../assets/image 1.png" alt="farbucks logo png">
+                <div class="text-header"><h2>FArbucks</h2></div>
+            </label>
+            <ul>
+                <li><a id="nav" href="index.html">Home</a></li>
+                <li><a id="nav" class="active" href="#">Coffee</a></li>
+                <li><a id="nav" href="events.html">Events</a></li>
+                <li><a id="nav" href="aboutUs.html">About Us</a></li>
+                <li><a onclick="signOutValidation();" id="register-nav" href="#">Register</a></li>
+            </ul>
+            <label id="burger-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+   </header> 
+
+   <section id="coffeepage">
+        <div class="coffee-container">
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 3 (1).png" alt="coffee menu poster">
+            </div>
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 12.png" alt="coffee menu poster">
+            </div>
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 14.png" alt="coffee menu poster">
+            </div>
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 16.png" alt="coffee menu poster">
+            </div>
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 20.png" alt="coffee menu poster">
+            </div>
+            <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 24.png" alt="coffee menu poster">
+            </div>
+            <!-- <div class="poster">
+                <img class="poster-img" src="../assets/Rectangle 3.png" alt="coffee menu poster">
+            </div> -->
+        </div>
+    
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <h2>FArbucks</h2>
+          <p>For more information, please go check our social media below:</p>
+          <ul class="socmed-logo">
+            <li><a id="ig" href="https://www.instagram.com/farbucks.id/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a id="twitter" href="https://twitter.com/farbucks" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a id="yt" href="https://www.youtube.com/user/farbucks" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a id="facebook" href="#https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a id="tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>&copy;2022 FArbucks Coffee Company. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+ </body>
+ </html>
